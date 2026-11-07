@@ -28,7 +28,7 @@ function Chart({ r }: { r: Result }) {
       {r.paybackYears !== null && (
         <g>
           <circle cx={x(r.paybackYears)} cy={zero} r="6" class="dot" />
-          <text x={x(r.paybackYears)} y={zero - 14} text-anchor="middle" class="pb">break-even · {r.paybackYears} yrs</text>
+          <text x={x(r.paybackYears)} y={zero - 14} text-anchor="middle" class="pb">payback · {r.paybackYears} yrs</text>
         </g>
       )}
     </svg>
